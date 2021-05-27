@@ -3,7 +3,14 @@ import React, { useState } from 'react';
 const View = (props) => {
     return(
         <div>
-        LOL
+        <nav style={{flexDirection: "row", backgroundColor: "blue"}}>
+            <a style={{color: "grey"}}>Battleship AI</a>
+            <a>
+            <button type="button" style={{cssFloat: "right", color: "grey"}}>
+                Register
+            </button>
+            </a>
+        </nav>
         </div>
     );
 }
