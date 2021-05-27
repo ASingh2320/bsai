@@ -7,7 +7,7 @@ const View = (props) => {
             <a style={{color: "grey"}}>Battleship AI</a>
             <a>
             <button type="button" style={{cssFloat: "right", color: "grey"}}>
-                Register
+                Register TEST
             </button>
             </a>
         </nav>
