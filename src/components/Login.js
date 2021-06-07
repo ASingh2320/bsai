@@ -5,10 +5,7 @@ const Login = (props) => {
     const [user, changeuser] =useState("");
     const [pw, changepw]     =useState("");
     const processlogin = async() =>{
-        //console.log("Sign up");
-        //console.log(user + " " + pw);
         const lol = await auth.signInWithEmailAndPassword(user, pw);
-        console.log("lol");
         console.log(auth.currentUser.uid);
     }
     return(
