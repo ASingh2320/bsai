@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import Register from "./Register";
-import Login from "./Login"
+import Login from "./Login";
+import Grid from "./Grid"
 
 const View = (props) => {
     const [register, showreg] = useState(false);
     const [login, showlog] = useState(false);
+    const [grid, showgrid] = useState(true);
+    const [rows, editrow] = useState(5);
+    const [cols, editcol] = useState(5);
 
     const showRegister = () => {
         showreg(true);
@@ -32,6 +36,9 @@ const View = (props) => {
         }
         {
             login && <Login/>
+        }
+        {
+            grid && <Grid cols = {cols} rows ={rows}/>
         }
         </div>
     );
